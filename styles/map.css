@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'Futura MdCn BT';
+    src: url('fonts/FuturaBT-MediumCondensed.woff2') format('woff2'),
+        url('fonts/FuturaBT-MediumCondensed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('fonts/FuturaBT-BookItalic.woff2') format('woff2'),
+        url('fonts/FuturaBT-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url('fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('fonts/FuturaBT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('fonts/FuturaBT-Light.woff2') format('woff2'),
+        url('fonts/FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-CondensedLight.woff2') format('woff2'),
+        url('fonts/Futura-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+button {
+	font-family: 'Futura Bk BT', Futura, sans-serif;
+}
+
+html, body {
+	margin: 0;
+	font-family: 'Futura Bk BT', Futura, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+}
+
+#flex {
+	flex: 1 1;
+	order: 2;
+	display: flex;
+}
+
+#home-flex {
+	flex: 1 1;
+	order: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+#home-wordle, #home-maptools, #home-jaycar{
+	width: 50%;
+	top: 20em;
+	bottom: 20em;
+	border: 10em;
+}
+
+#home-wordle:hover, #home-maptools:hover, #home-jaycar:hover{
+	color: gray;
+	cursor: pointer;
+}
+
+#mapid, #circle-tools, #distance-box, #days-left {
+	position: absolute;
+}
+
+#mapid {
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	flex: 1;
+	top: 0;
+	left: 0;
+}
+
+aside {
+	background: #ffffff;
+	box-shadow: 5px 5px 5px grey;
+	padding: 5px;
+	z-index: 10;
+}
+
+button#hide-all, button#show-all {
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	cursor: pointer;
+}
+
+#circle-tools {
+	top: 2%;
+	right: 1%;
+}
+
+#distance-box {
+	bottom: 2%;
+	right: 1%;
+}
+
+#days-left {
+	top: 2%;
+	left: 3%;
+}
+
+.category-header {
+	text-decoration-line:underline;
+}
+
+.category-header:hover {
+	font-weight:bold;
+}
+
+.hideAllSelects select {
+   display: none;
+}
+
+.comments {
+	display:inline-block; 
+	margin-left: 40px;
+	font-size: 0.75em;
+	color: #0F0F0F;
+}
+
+.hideaway {
+	margin-left:1%;
+	margin-right: 1%;
+}
+
+#hints-flex {
+	margin-left: 3%;
+	margin-right: 1%;
+}
+
+footer {
+	position: fixed;
+	bottom:2%;
+	margin-left: 2%;
+	padding: 3px;
+	background-color: white;
+	width: 100%;
+}
