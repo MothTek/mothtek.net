@@ -132,9 +132,13 @@
   #page a {
     color: crimson !important;
   }
-
+  
   #notpage a {
     color: white !important;
+  }
+
+  #intro3 {
+    color: crimson !important;
   }
 
   header #title {
