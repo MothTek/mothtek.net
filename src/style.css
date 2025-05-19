@@ -277,3 +277,13 @@
     margin-right: auto;
     width: 50%;
   }
+
+  .project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+  }
