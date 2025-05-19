@@ -29,13 +29,13 @@
   .header {
     font-size: 20px;
     font-family: 'Futura Bk BT', Futura, sans-serif;
-    color: var(--header-color);
+    color: white;
   }
   .header2 {
     font-size: 14px;
     font-weight: bolder;
     font-family: 'Futura Lt BT', Futura, sans-serif;
-    color: var(--link-hover-color);
+    color: white;
   }
   .alttext {
     font-size: 10px;
@@ -121,12 +121,18 @@
     gap: 1rem;
     font-size: 1.3rem;
     margin-top: 1rem;
-    font-family: monospace;
+    font-family: 'Futura Bk BT', Futura, sans-serif;
     margin-bottom: 0.5rem;
   }
   header nav #navmenu a {
     color: white;
   }
+
+  #page a {
+    color: crimson !important;
+  }
+
+
 
   header #title {
     text-align: center;

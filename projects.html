@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Our Projects</title>
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-		crossorigin=""/>
-	<link rel="stylesheet" href="src/style.css" />
-	<link rel="icon" type="image/x-icon" href="img/moth.ico" />
-</head>
-<body>
-	<div id="home-flex" class="flex-container">
-		<section id="headline">
-			<h3 id="maintitle" href="index.html" onClick="location.href='index.html'">MothTek</h3><h3 id="subtitle">: Projects</h3>
-		</section>
-		<section id="home-bar">
-			<div id="home-link" class="grow-link" href="contact.html" onClick="location.href='contact.html'">
-				Contact Us
-			</div>
-			<div id="home-link" class="grow-link" href="contact.html" onClick="location.href='projects.html'">
-				Our Projects
-			</div>
-		</section>
-		<section id="main-content">
-			<div>
+<html data-theme="">
+    <head>
+        <title> MothTek </title>
+        <link rel="stylesheet" href="src/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a id="title"> MothTek </a>
+                <ul id="navmenu">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="page"><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+<div id="intro">
 				Here are some of our projects: <br />
 				Project 1 <br />
 				Project 2 <br />
 				Project 3 <br />
-			</div>			
-		</section>
-	</div>
-</body>
+</div>		
+
+<ul id="socials">
+    <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
+    <li><a href="https://bsky.app/profile/mothtek.net"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"></a></li>
+</ul>
+        </main>
+    <footer>
+        <p> This server is powered by Feiteng D2000 hardware</p>
+        <ul id="buttons">
+            <li><img src="D2000.png" class="d2000"></li>
+        </ul>
+        <br>
+        <p>ABN: 123 456 789 1</p>
+        </footer>
+    </body>
 </html>
