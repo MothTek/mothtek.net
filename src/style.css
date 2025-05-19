@@ -91,6 +91,7 @@
     justify-content: unset;
     gap: 2rem;
     overflow-x: hidden;
+    background-color: #181a1b;
   }
 
   main {
@@ -132,7 +133,9 @@
     color: crimson !important;
   }
 
-
+  #notpage a {
+    color: white !important;
+  }
 
   header #title {
     text-align: center;
@@ -230,7 +233,7 @@
   main #intro {
     display: flex;
     flex-direction: row;
-    text-align: center;
+
     justify-content: center;
     gap: 1rem;
   }
