@@ -141,6 +141,11 @@
     color: crimson !important;
   }
 
+  #redtext-centre {
+    color: crimson !important;
+    text-align: center;
+  }
+
   header #title {
     text-align: center;
     font-family: 'Futura Bk BT', Futura, sans-serif;
