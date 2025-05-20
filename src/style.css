@@ -137,7 +137,7 @@
     color: white !important;
   }
 
-  #intro3 {
+  #redtext {
     color: crimson !important;
   }
 
@@ -226,6 +226,8 @@
   }
 
   main #intro3 {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   main #intro p {
