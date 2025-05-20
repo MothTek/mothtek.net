@@ -221,13 +221,11 @@
   main #intro {
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: center;
     gap: 1rem;
   }
 
   main #intro3 {
-    text-align: center;
   }
 
   main #intro p {
