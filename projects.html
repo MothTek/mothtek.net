@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html data-theme="">
     <head>
-        <title> MothTek </title>
+        <title> Projects </title>
         <link rel="stylesheet" href="src/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     </head>
     <body>
         <header>
             <nav>
-                <a id="title"> MothTek </a>
+                <a id="title"> <b>MothTek </b></a>
                 <ul id="navmenu">
                     <li id="notpage"><a href="index.html">About</a></li>
                     <li id="notpage"><a href="contact.html">Contact</a></li>
@@ -21,19 +21,24 @@
             <div id=intro3>
 <h1 id="redtext-centre"> Our projects: </h1>
 <br>
-<p> On this page is all the current MothTek projects, along with Github links for the design <br>
-    files. We enjoy creating anything that might be of interest to ourselves or other like-minded <br>
-    hardware tinkerers <br>
+<p> These are our current projects. Anything WIP is subject to me getting bored.<br>
     <br>
     <br>                
 
+<h1><a id="redtext" href="projects/thinkmoth.html">ThinkMoth ExpressCard to NVMe:</a> </h1>
+<p> An ExpressCard to M.2 2230/2242 NVMe adapter, featuring status LEDs and a microSD <br>
+    slot for boot support.
+    <a><img src="img/thinkmoth.png" class="project-image"></a><br>
+    <br>
+    <a href="https://github.com/mothenjoyer69/thinkmoth-expresscard"> View it on Github </a>
+    <br>
+    <br>
 
+    
 <h1 id="redtext"> RPI CM4 Compute Module Carrier: </h1>
 <p> A small CM4 carrier board designed for portable use in a variety of form factors. <br>
     It features USB 3.0 (Type A and Type-C), HDMI and MIPI-DSI for a Nexus 7 touch panel,<br>
     20V USB-C PD negotiation, and hardware killswitches. <br>
-    It is currently a work in progress, however it is nearing the completion phase and <br> 
-    awaiting a redesign of the LiPo charge circuitry. Prototypes are expected before July. <br>
     <a><img src="img/cm4-carrier.png" class="project-image"></a><br>
     <br>
     <a href="https://github.com/MothTek/computemothdule-carrier"> View it on Github </a>
@@ -41,16 +46,12 @@
     <br>
 
 <h1 id="redtext"> Project Dark Wing ADAHRS:</h1>
-<p> A project to provide a low cost, open source ADAHRS solution for light aircraft. <br>
-    Utilizing the high performance PIC64GX MPU, with discrete FPGAs for each radio interface. <br>
-    More details to come <br>
+<p> A project to provide a low cost, open source ADAHRS solution for light aircraft. <br> <br>
     <br>
     <br>
 
-<h1 id="redtext"> bugboard-1 D2000 mITX motherboard:</h1>
-<p> An attempt to produce a desktop mITX motherboard using the Phytium D2000 CPU. This <br>
-    board will feature typical desktop motherboard I/O, including USB 3.0 and PCIe x16, and <br>
-    will support EDK2. This project is in the initial stages. <br>
+<h1 id="redtext"> Phytium D2000 Motherboard:</h1>
+<p> On ice, awaiting motivation.
     <br>
     <a href="https://github.com/MothTek/bugboard-1/"> View it on Github </a>
     <br>
@@ -59,21 +60,9 @@
 <h1 id="redtext"> MXM Thunderbolt 3 dock:</h1>
 <p> A TB3 compliant docking station for a mobile MXM GPU. Featuring support for both <br>
     standard MXM3.0b and Clevo MXM3.0b cards, and up to 200W of power, with all available <br>
-    display outputs broken out, and 65W PD supplied to the host device. Work is currently <br>
-    ongoing on this board, with prototype hardware expected by July.<br>
+    display outputs broken out, and 65W PD supplied to the host device.<br>
     <br>
     <a href="https://github.com/MothTek/thundermxm"> View it on Github </a>
-    <br>
-    <br>
-
-
-<h1 id="redtext"> lacewing-1 CH592 BLE UART:</h1>
-<p> A tiny CH592 board for remote UART debugging over BLE. Built to be as small as it can<br>
-    possibly be, this board can fit in almost any problematic device and give you a remote <br>
-    UART console on any device! <br>
-    Coming very soon!<br>
-    <br>
-    <a href="https://github.com/MothTek/lacewing-ble"> View it on Github </a>
     <br>
     <br>
 
@@ -87,32 +76,6 @@
     <a href="https://github.com/MothTek/tiny-ccd"> View it on Github </a>
     <br>
     <br>
-<h1 id="redtext"> leaflitter-1 RP2350 with PD support:</h1>
-<p> A fairly simple clone of the RP2350 Pi Pico board, with the addition of an FUSB302 for <br>
-    USB-C PD support. Can be used for debugging and for playing with USB-C alternate modes. <br>
-    Coming very soon!<br>
-    <br>
-    <a href="https://github.com/MothTek/leaflitter-1"> View it on Github </a>
-    <br>
-    <br>
-<h1 id="redtext"> dustmite-1 Breadboardable USB-C 2.0 breakout:</h1>
-<p> A tiny, breadboardable USB-C module with support for 5v3a USB-C PD. USB data lines are also <br>
-    available, and it can easily be used to add simple PD to any project. <br>
-    Coming very soon!<br>
-    <br>
-    <a href="https://github.com/MothTek/dustmite-1"> View it on Github </a>    
-    <br>
-    <br>
-
-<h1 id="redtext"> axolotl-1 PCIe card featuring SSD203D:</h1>
-<p> A PCIe desktop card featuring a SigmaStar SSD203D SoC, with USB, HDMI, ethernet, and HDMI-RX. <br>
-    Intended to provide an open source network display solution, as well as a general computing platform<br>
-    that can be installed alongside a complete desktop. <br>
-    Coming soon!<br>
-    <br>
-    <a href="https://github.com/MothTek/axolotl-1"> View it on Github </a>
-    <br>
-
 </div>
 <ul id="socials">
     <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
