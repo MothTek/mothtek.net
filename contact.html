@@ -1,30 +1,39 @@
 <!DOCTYPE html>
+<!-- if anything is broken blame wherever i copy pasted from -->
 <html data-theme="">
     <head>
-        <title> Contact </title>
-        <link rel="stylesheet" href="src/style.css" />
+        <title> mothsite </title>
+        <link rel="stylesheet" href="src/style.css"/>
+        <link rel="icon" type="image/x-icon" href="img/moth.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     </head>
     <body>
-        <header>
+        <header class="header-bg">
+            <img src="img/bg.jpg" alt="Header Image" class="header-bg-image" />
             <nav>
-                <a id="title"> <b>MothTek </b></a>
+               <a id="title"> <b> MothTek </b></a>
                 <ul id="navmenu">
-                    <li id="notpage"><a href="index.html">About</a></li>
-                    <li id="page"><a href="#">Contact</a></li>
-                    <li id="notpage"><a href="projects.html">Projects</a></li>
-                    <li id="notpage"><a href="store.html">Store</a></li>
+                    <li id="notpage"><a href="index.html"> Home </a></li>
+                    <li id="notpage"><a href="projects.html"> Projects </a></li>
+                    <li id="page"><a href="contact.html"> Contact </a></li>
                 </ul>
             </nav>
         </header>
         <main>
-        <div id=intro3>
-        <h1 id="redtext"> Contact us: </h1>
-        <p> You can contact us using any of the below methods: <br>
+   <div id="intro3">
+    <div style="display: flex; align-items: center; gap: 1.5em;">
+        <img class="project-image" src="img/moth.ico" alt="moth" style="width:100px; height:100px; object-fit:cover;">
+        <div class="intro-text">
+            <p>
+                <h1 > Contact us: </h1>
+                <p> You can contact us using any of the below methods: <br>
 
-            <a id="redtext">Email:</a> <a href="mailto:info@mothtek.net">info@mothtek.net</a><br>
-            <a id="redtext">Bluesky:</a> <a href="https://bsky.app/profile/mothtek.net">MothTek</a><br>
+                <a >Email:</a> <a href="mailto:info@mothtek.net">info@mothtek.net</a><br>
+                <a >Bluesky:</a> <a href="https://bsky.app/profile/mothtek.net">MothTek</a><br>               
+            </p>
         </div>
+    </div>
+
 
 <ul id="socials">
     <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
@@ -36,8 +45,6 @@
         <ul id="buttons">
             <li><img src="img/D2000.png" class="d2000"></li>
         </ul>
-        <br>
-        <p>ABN: 123 456 789 1</p>
         </footer>
     </body>
 </html>

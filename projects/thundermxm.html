@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- if anything is broken blame wherever i copy pasted from -->
+<html data-theme="">
+    <head>
+        <title> mothsite </title>
+        <link rel="stylesheet" href="../src/style.css"/>
+        <link rel="icon" type="image/x-icon" href="../img/moth.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+    <body>
+        <header class="header-bg">
+            <img src="../img/bg.jpg" alt="Header Image" class="header-bg-image" />
+            <nav>
+               <a id="title"> <b> MothTek </b></a>
+                <ul id="navmenu">
+                    <li id="notpage"><a href="../index.html"> Home </a></li>
+                    <li id="page"><a href="../projects.html"> Projects </a></li>
+                    <li id="notpage"><a href="../contact.html"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="blogpost">
+<h1 id="thundermxm">ThunderMXM</h1>
+<p>A TB3 MXM dock with support for full size MXM3.0b and Clevo-style
+cards! Native display outputs from the MXM card are broken out, as well
+as USB and PD back to the host device.</p>
+<p>It's very WIP and the latest changes aren't on GitHub yet :(
+Hopefully soon!</p>
+<h1 id="specs">Specs:</h1>
+<ul>
+<li>Intel JHL7440 TB3 module</li>
+<li>MXM3.0b interface, with full support for Clevo power connectors</li>
+<li>PCIe 3.0 x4 link</li>
+<li>All available I/O broken out:
+<ul>
+<li>3x DP + 1x HDMI for monitor and VR headset support</li>
+<li>USB3.0 downstream ports for various devices</li>
+</ul></li>
+<li>Dell-style 15A barrel jack connector</li>
+<li>Fan header with PWM control</li>
+</ul>
+<h1 id="credits">Credits</h1>
+<p>This project wouldn't exist without the help of <a
+href="https://github.com/a-little-wifi/">wifi</a> and her incredible <a
+href="https://github.com/a-little-wifi/mxm-immobilizer">MXM Immobilizer
+project</a>. I also stole the cool MXM outline from there :3</p>
+            </div>
+            <ul id="socials">
+                <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
+                <li><a href="https://bsky.app/profile/mothtek.net"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"></a></li>
+            </ul>
+        </main>
+    <footer>
+        <p> This site is powered by Feiteng D2000 hardware</p>
+        <ul id="buttons">
+            <li><img src="../img/D2000.png" class="d2000"></li>
+        </ul>
+        </footer>
+    </body>
+</html>
