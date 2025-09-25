@@ -10,7 +10,7 @@ fi
 
 
 # convert md to html and add ids so i can format it later, remove the dumbass stupid apostrophe
-MD_HTML=$(pandoc --from markdown --to html "$MD" | sed -E "s/’/\\\'/g" | sed -E "s/”/\\\'/g")
+MD_HTML=$(pandoc --from markdown --to html "$MD" | sed -E "s/’/\\\'/g" | sed 's/”/"/g')
 
 
 # insert it
