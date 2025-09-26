@@ -20,180 +20,56 @@
             </nav>
         </header>
         <main>
-   <div id="intro3">
-    <div style="display: flex; align-items: center; gap: 1.5em;">
-        <img class="project-image" src="img/moth.ico" alt="moth" style="width:100px; height:100px; object-fit:cover;">
-        <div class="intro-text">
-            <p>
-                MothTek is a project by two people who love Open Source hardware, and have a burning desire to build the cool and weird and cursed things we want to see in the world!<br>
-                <br>
-                Most of these projects exist because we thought it was cool, silly, or a combination of the two, and we hope they help with any niche needs you might have :)<br>
-                <br>
-                Armed with a questionable combination of Kicad, a cracked Altium install, and piles of leaked datasheets, we're working on boards featuring high speed PCIe, DDR memory, and bad ideas.<br>
-                <br>
-                Check out our store on Tindie when it launches!<br>               
-            </p>
-        </div>
-    </div>
-</div>
-    <div class="blogpostpreviewsmall">
-        <div id="posts">
-            <h1 id="blogetitle">MothTek Projects:</h1>
-        
-        <div class="blogpostpreviewsmall"> 
-            <ul>
-                <li><a href="projects/thinkmoth-expresscard.html"> ThinkMoth ExpressCard to NVMe </a></li>
-            </ul>
-        </div>
+          <div id="intro3">
+            <div style="display: flex; align-items: center; gap: 1.5em;">
+                <img class="project-image" src="img/moth.ico" alt="moth" style="width:100px; height:100px; object-fit:cover;">
+                <div class="intro-text">
+                    <p>
+                        MothTek is a project by two people who love Open Source hardware, and have a burning desire to build the cool and weird and cursed things we want to see in the world!<br>
+                        <br>
+                        Most of these projects exist because we thought it was cool, silly, or a combination of the two, and we hope they help with any niche needs you might have :)<br>
+                        <br>
+                        Armed with a questionable combination of Kicad, a cracked Altium install, and piles of leaked datasheets, we're working on boards featuring high speed PCIe, DDR memory, and bad ideas.<br>
+                        <br>
+                        Check out our store on Tindie when it launches!<br>               
+                    </p>
+                </div>
+            </div>
+          </div>
+            <div class="blogpostpreviewsmall">
+                <div id="posts">
+                  <h1 id="blogetitle">MothTek Projects:</h1>
+                
+                <div class="blogpostpreviewsmall"> 
+                  <ul>
+                    <li><a href="projects/thinkmoth-expresscard.html"> ThinkMoth ExpressCard to NVMe </a></li>
+                  </ul>
+                </div>
 
-        <div class="blogpostpreviewsmall"> 
-            <ul>
-                <li><a href="projects/thundermxm.html"> ThunderMXM eGPU</a></li>
-            </ul>
-        </div>
+                <div class="blogpostpreviewsmall"> 
+                  <ul>
+                    <li><a href="projects/thundermxm.html"> ThunderMXM eGPU</a></li>
+                  </ul>
+                </div>
 
-        <div class="blogpostpreviewsmall"> 
-            <ul>
-                <li><a href="projects/template.html"> Phytium project </a></li>
-            </ul>
-        </div>        
-        </div>
-    <div id="emptydiv"></div>
-</div>
+                <div class="blogpostpreviewsmall"> 
+                  <ul>
+                    <li><a href="projects/template.html"> Phytium project </a></li>
+                  </ul>
+                </div>        
+              </div>
+            <div id="emptydiv"></div>
+          </div>
 
-<ul id="socials">
-    <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
-    <li><a href="https://bsky.app/profile/mothtek.net"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"></a></li>
-</ul>
+          <ul id="socials">
+              <li><a href="https://github.com/MothTek"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg"></a></li>
+              <li><a href="https://bsky.app/profile/mothtek.net"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"></a></li>
+          </ul>
         </main>
-    <footer>
-  <p>This site is powered by Feiteng D2000 hardware</p>
-  <ul id="buttons">
-    <li><img src="img/D2000.png" class="d2000"></li>
-  </ul>
-</footer>
-
-<style>
-  .d2000 {
-    width: 80px;
-    height: auto;
-    cursor: pointer;
-    z-index: 9999;
-    pointer-events: auto;
-  }
-</style>
-
-<script>
-const logo = document.querySelector('.d2000');
-
-function startHunting() {
-  const rect = logo.getBoundingClientRect();
-
-  logo.style.width = rect.width + 'px';
-  logo.style.height = rect.height + 'px';
-
-  let x = rect.left + rect.width / 2;
-  let y = rect.top + rect.height / 2 - 15; 
-
-  logo.style.position = 'fixed';
-  logo.style.left = x - logo.offsetWidth / 2 + 'px';
-  logo.style.top  = y - logo.offsetHeight / 2 + 'px';
-
-  let vx = 0;
-  let vy = 0;
-  let hunting = false;
-  let mouseX = x;
-  let mouseY = y;
-
-  let catchTimer = 0;
-  const catchDistance = 15;
-  const catchDuration = 3000;
-  const catchChance = 0.1;
-
-let hoverStart = null;
-
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-
-  const rect = logo.getBoundingClientRect();
-  const cursorInside =
-      e.clientX >= rect.left &&
-      e.clientX <= rect.right &&
-      e.clientY >= rect.top &&
-      e.clientY <= rect.bottom;
-
-  if (cursorInside) {
-    if (!hoverStart) hoverStart = performance.now();
-    else if (!hunting && performance.now() - hoverStart >= 1500) {
-      hunting = true;
-      vx = 0;
-      vy = 0;
-    }
-  } else {
-    hoverStart = null;
-  }
-});
-
-  function animate(timestamp) {
-    if (hunting) {
-      const dx = mouseX - x;
-      const dy = mouseY - y;
-      const dist = Math.sqrt(dx*dx + dy*dy);
-
-      if (dist > 1) {
-    const baseSpeed = 0.03;
-    const maxSpeedFactor = 100;
-    const minDistance = 10;   
-    const maxDistance = 100000;   
-
-    let speedFactor;
-    speedFactor = 1 + (maxDistance - dist) / (maxDistance - minDistance) * (maxSpeedFactor - 1);
-
-    const moveX = (dx / dist) * baseSpeed * speedFactor;
-    const moveY = (dy / dist) * baseSpeed * speedFactor;
-
-    vx = vx * 0.8 + moveX * 0.2;
-    vy = vy * 0.8 + moveY * 0.2;
-
-    x += vx;
-    y += vy;
-
-    logo.style.left = x - logo.offsetWidth / 2 + 'px';
-    logo.style.top  = y - logo.offsetHeight / 2 + 'px';
-}
-    const centerX = x;
-    const centerY = y;
-    const distanceToCursor = Math.sqrt((mouseX - centerX)**2 + (mouseY - centerY)**2);
-
-    if (distanceToCursor < catchDistance) {
-      if (!catchTimer) catchTimer = performance.now();
-      else if (performance.now() - catchTimer >= catchDuration) {
-        if (Math.random() < catchChance) {
-          hunting = false;
-          window.location.href = "https://phytium.com.cn";
-          return;
-        } else {
-          catchTimer = performance.now();
-        }
-      }
-    } else {
-      catchTimer = 0;
-    }
-}
-
-requestAnimationFrame(animate);
-}
-
-animate();
-}
-
-if (logo.complete) {
-  startHunting();
-} else {
-  logo.addEventListener('load', startHunting);
-}
-</script>
-
+      <footer>
+        <img src="img/D2000.png" class="d2000">
+        <p>This site is powered by Feiteng D2000 hardware</p>
+      </footer>
+      <script src="cursor.js" defer></script>
     </body>
 </html>
