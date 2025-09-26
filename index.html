@@ -142,18 +142,13 @@ document.addEventListener('mousemove', e => {
       const dist = Math.sqrt(dx*dx + dy*dy);
 
       if (dist > 1) {
-    const baseSpeed = 0.025;
-    const maxSpeedFactor = 3;
-    const minDistance = 20;   
-    const maxDistance = 500;   
+    const baseSpeed = 0.03;
+    const maxSpeedFactor = 100;
+    const minDistance = 10;   
+    const maxDistance = 100000;   
 
     let speedFactor;
-    if (dist >= maxDistance) speedFactor = 10
-    else if (dist <= minDistance) speedFactor = maxSpeedFactor;
-    else {
-  
-        speedFactor = 1 + (maxDistance - dist) / (maxDistance - minDistance) * (maxSpeedFactor - 1);
-    }
+    speedFactor = 1 + (maxDistance - dist) / (maxDistance - minDistance) * (maxSpeedFactor - 1);
 
     const moveX = (dx / dist) * baseSpeed * speedFactor;
     const moveY = (dy / dist) * baseSpeed * speedFactor;
